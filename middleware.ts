@@ -2,9 +2,6 @@ import { rewrite } from "@vercel/edge";
 
 export const config = {
   runtime: "edge",
-  matcher: [
-    "/:path*/(?!.*\\.(css|js|jsx|ts|tsx|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot)$).*",
-  ],
 };
 
 export default function middleware(request: Request) {
