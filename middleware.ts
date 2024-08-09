@@ -2,6 +2,7 @@ import { rewrite } from "@vercel/edge";
 
 export const config = {
   runtime: "edge",
+  matcher: ["/((?!assets/|vite.svg).*)"],
 };
 
 export default function middleware(request: Request) {
