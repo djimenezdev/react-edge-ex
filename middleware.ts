@@ -3,7 +3,7 @@ import { rewrite } from "@vercel/edge";
 export const config = {
   runtime: "edge",
   matcher: [
-    "/((?!assets/.*|.*\\.svg|.*\\.css|.*\\.js|.*\\.jsx|.*\\.ts|.*\\.tsx|.*\\.jpg|.*\\.jpeg|.*\\.png|.*\\.gif|.*\\.ico|.*\\.woff|.*\\.woff2|.*\\.ttf|.*\\.eot))",
+    "/((?!assets/|.*\\.svg|.*\\.css|.*\\.js|.*\\.jsx|.*\\.ts|.*\\.tsx|.*\\.jpg|.*\\.jpeg|.*\\.png|.*\\.gif|.*\\.ico|.*\\.woff|.*\\.woff2|.*\\.ttf|.*\\.eot).*)",
   ],
 };
 
